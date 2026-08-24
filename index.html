@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kristian Smaga — Portfolio de soutenance BUT GEII</title>
+<meta name="description" content="Portfolio de soutenance — Kristian Smaga, alternant GTB &amp; Régulation chez EQUANS Digital">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Reading progress -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Ambient background layer -->
+<div class="ambient" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <svg class="schema-lines" viewBox="0 0 1200 800" aria-hidden="true">
+    <path class="schema-path" d="M-50,120 L200,120 L200,300 L480,300 L480,90 L820,90" />
+    <path class="schema-path" d="M-50,600 L260,600 L260,420 L640,420 L640,700 L1250,700" />
+    <circle class="schema-node" cx="200" cy="120" r="4"/>
+    <circle class="schema-node" cx="480" cy="300" r="4"/>
+    <circle class="schema-node" cx="260" cy="600" r="4"/>
+    <circle class="schema-node" cx="640" cy="420" r="4"/>
+  </svg>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#accueil" class="nav-brand">KS<span class="nav-brand-dot">.</span></a>
+  <nav class="nav-links">
+    <a href="#accueil" data-nav>Accueil</a>
+    <a href="#profil" data-nav>Profil</a>
+    <a href="#projet" data-nav>Projet</a>
+    <a href="#competences" data-nav>Compétences</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="accueil">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow reveal"><span class="eyebrow-dot"></span>Apprenti automaticien — EQUANS Digital</p>
+      <h1 class="hero-title">
+        <span class="reveal-line"><span class="reveal-inner">KRISTIAN</span></span>
+        <span class="reveal-line"><span class="reveal-inner">SMAGA</span></span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Apprenti automaticien  — <strong>EQUANS&nbsp;Digital</strong><br>
+        Futur élève en cycle ingénieur — <strong>CESI</strong>
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#competences" class="btn btn-primary">
+          <span>Voir les compétences</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="assets/SMAGA_Kristian_CV.pdf.pdf" class="btn btn-ghost" download>
+          <span>Télécharger le CV</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-portrait reveal">
+
+      <div class="portrait-frame" id="portraitFrame">
+    
+        <img
+          src="images/moi.PNG"
+          alt="Photo de Kristian Smaga"
+          class="portrait-photo"
+        >
+    
+      </div>
+    
+    
+    
+    </div>
+
+  <div class="hero-stats reveal">
+    <div class="stat" data-count="3">
+      <span class="stat-number mono" data-target="3">0</span>
+      <span class="stat-label">ème année du BUT GEII</span>
+    </div>
+    <div class="stat" data-count="2">
+      <span class="stat-number mono" data-target="2">0</span>
+      <span class="stat-label">ans d'alternance</span>
+    </div>
+    <div class="stat" data-count="4">
+      <span class="stat-number mono" data-target="4">0</span>
+      <span class="stat-label">études de cas</span>
+    </div>
+    <div class="stat" data-count="1">
+      <span class="stat-number mono" data-target="1">0</span>
+      <span class="stat-label">projet phare</span>
+    </div>
+  </div>
+
+  <a href="#profil" class="scroll-cue" aria-label="Défiler vers le bas">
+    <span></span>
+  </a>
+</section>
+
+<!-- ================= PROFIL ================= -->
+<section class="section" id="profil">
+  <div class="container">
+    <p class="section-eyebrow reveal">01 — Profil</p>
+    <h2 class="section-title reveal">À propos de moi</h2>
+    <div class="profil-grid">
+      <div class="profil-text reveal">
+        <p>Étudiant en <strong>3ᵉ année de BUT Génie Électrique et Informatique Industrielle</strong>, je réalise ma formation en alternance chez <strong>EQUANS Digital</strong>.</p>
+      
+        <p>Au cours de mon alternance, j’ai eu l’occasion de travailler sur différents projets autour de <strong>l’automatisme, de la régulation, de la Gestion Technique du Bâtiment (GTB) et du développement d’interfaces homme-machine (IHM)</strong>. Ces expériences m’ont permis de mettre en pratique les connaissances acquises durant ma formation sur des installations réelles, tout en gagnant progressivement en autonomie.</p>
+      
+        <p>Ce que j’apprécie particulièrement dans mon domaine est la diversité des projets : <strong>comprendre le fonctionnement d’une installation, analyser un besoin, développer une solution technique et la mettre en œuvre sur le terrain</strong>.</p>
+      
+        <p>Mon objectif est aujourd’hui de poursuivre cette progression en <strong>école d’ingénieur</strong>, afin d’élargir mes compétences techniques et de prendre progressivement davantage de responsabilités dans la gestion et le suivi de projets.</p>
+      </div>
+
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="mono timeline-tag">Formation</span>
+            <h3>BUT GEII — Parcours AII</h3>
+            <p>Automatisme &amp; Informatique Industrielle — IUT de Nantes</p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="mono timeline-tag">Alternance</span>
+            <h3>Automaticien — EQUANS Digital</h3>
+            <p>Programmation d'automates, conception d'IHM &amp; systèmes CVC</p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="mono timeline-tag">Poursuite d'études</span>
+            <h3>Cycle ingénieur généraliste — CESI</h3>
+            <p>Formation en alternance à CESI Saint-Nazaire</p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="mono timeline-tag">Objectif</span>
+            <h3>Ingénieur d'affaires ou gestion de projets</h3>
+            <p>Évoluer vers le pilotage de projets techniques et industriels</p>
+          </div>
+        </div>
+      
+      </div>
+
+    <div class="skill-tags reveal">
+      <span class="tag">GTB</span>
+      <span class="tag">CTA</span>
+      <span class="tag">Régulation</span>
+      <span class="tag">Automatisme</span>
+      <span class="tag">Documents techniques</span>
+      <span class="tag">Mise en service</span>
+      <span class="tag">Gestion d'alarmes</span>
+      <span class="tag">Supervision</span>
+      <span class="tag">Analyse fonctionnelle</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJET PRINCIPAL ================= -->
+<section class="section project-section" id="projet">
+
+  <div class="project-banner reveal">
+
+    <!-- Silhouette architecturale du projet hospitalier -->
+    <div class="project-banner-schema" aria-hidden="true">
+      <svg viewBox="0 0 600 260" width="100%" height="100%" fill="none">
+
+        <path
+          d="
+            M20 205
+            L55 205
+            L55 180
+            L85 180
+            L85 155
+            L120 155
+            L120 120
+            L165 120
+            L165 95
+            L205 95
+            L205 125
+            L250 125
+            L250 105
+            L290 105
+            L290 135
+            L335 135
+            L335 85
+            L385 85
+            L385 110
+            L420 110
+            L420 145
+            L460 145
+            L460 120
+            L500 120
+            L500 165
+            L535 165
+            L535 190
+            L575 190
+          "
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+
+        <!-- Quelques détails architecturaux -->
+        <path
+          d="
+            M120 155 L120 205
+            M165 120 L165 205
+            M205 125 L205 205
+            M250 125 L250 205
+            M290 135 L290 205
+            M335 135 L335 205
+            M385 110 L385 205
+            M420 145 L420 205
+            M460 145 L460 205
+            M500 165 L500 205
+          "
+          stroke="currentColor"
+          stroke-width="1"
+          opacity=".45"
+        />
+
+        <!-- Ligne du sol -->
+        <path
+          d="M20 205 L575 205"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+        />
+
+      </svg>
+    </div>
+
+
+    <div class="container project-banner-inner">
+      <p class="section-eyebrow">02 — Projet principal</p>
+
+      <h2 class="project-title">
+        Projet hospitalier d'envergure
+      </h2>
+
+      <p class="project-subtitle">
+        Fil conducteur de mon alternance chez EQUANS Digital
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="container">
+
+    <div class="project-grid">
+
+      <!-- CONTEXTE -->
+      <div class="project-block reveal">
+        <span class="mono block-label">Contexte</span>
+
+        <p>
+          Dans le cadre de mon alternance, j'ai participé à un
+          <strong>important projet de construction hospitalière</strong>
+          comprenant de nombreuses installations techniques liées au
+          traitement de l'air et aux systèmes CVC.
+        </p>
+      </div>
+
+
+      <!-- MON RÔLE -->
+      <div class="project-block reveal">
+        <span class="mono block-label">Mon rôle</span>
+
+        <p>
+          Intégré à l'équipe automatisme et régulation, j'interviens
+          principalement sur la
+          <strong>programmation des systèmes de régulation</strong>,
+          la <strong>conception d'interfaces homme-machine (IHM)</strong>,
+          ainsi que sur les différentes phases de vérification et de
+          mise en service des installations.
+        </p>
+      </div>
+
+
+      <!-- MES MISSIONS -->
+      <div class="project-block reveal">
+        <span class="mono block-label">Mes missions</span>
+
+        <p>
+          Programmation avec <strong>EC-gfxProgram</strong>,
+          développement d'IHM avec <strong>EasyBuilder Pro</strong>,
+          travail sur des installations de traitement d'air et
+          hydrauliques, vérification du fonctionnement des équipements
+          et participation aux <strong>essais de régulation et aux mises
+          en service sur site</strong>.
+        </p>
+      </div>
+
+
+      <!-- MES RÉALISATIONS -->
+      <div class="project-block reveal">
+        <span class="mono block-label">Mes réalisations</span>
+
+        <p>
+          Plusieurs travaux réalisés au cours de ce projet sont présentés
+          dans les études de cas ci-dessous. Ils permettent d'illustrer
+          concrètement les <strong>compétences techniques et méthodologiques</strong>
+          que j'ai développées tout au long de mon alternance.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ================= GALERIE ================= -->
+
+    <div class="gallery reveal" id="projectGallery">
+
+      <!-- PHOTO 1 : VUE DU PROJET -->
+      <button 
+        class="gallery-item" 
+        data-lightbox-group="projet" 
+        data-caption="Vue extérieure du projet hospitalier">
+    
+        <img 
+          src="images/chu_nantes.webp" 
+          alt="Vue extérieure du projet hospitalier"
+        >
+    
+      </button>
+    
+    
+      <!-- PHOTO 2 : MISE EN SERVICE -->
+      <button 
+        class="gallery-item" 
+        data-lightbox-group="projet" 
+        data-caption="Mise en service : test et validation des défauts">
+    
+        <img 
+          src="images/mise_en_service_1.jpg" 
+          alt="Mise en service sur site"
+        >
+    
+      </button>
+    
+    
+      <!-- PHOTO 3 : IHM -->
+      <button 
+        class="gallery-item" 
+        data-lightbox-group="projet" 
+        data-caption="Mise en service : chargement des programmes">
+    
+        <img 
+          src="images/mise_en_service_2.jpg" 
+          alt="Interface homme-machine"
+        >
+    
+      </button>
+    
+    
+      <!-- PHOTO 4 : INSTALLATION / ESSAIS -->
+      <button 
+        class="gallery-item" 
+        data-lightbox-group="projet" 
+        data-caption="Poste de travail sur site">
+    
+        <img 
+          src="images/mise_en_service_3.jpg" 
+          alt="Essais et vérification d'une installation CVC"
+        >
+    
+      </button>
+    
+    </div>
+  
+
+  </div>
+
+</section>
+
+<!-- ================= COMPETENCES ================= -->
+<section class="section" id="competences">
+  <div class="container">
+    <p class="section-eyebrow reveal">03 — Compétences</p>
+    <h2 class="section-title reveal">Quatre études de cas</h2>
+    <p class="section-lead reveal">Chaque carte détaille une compétence développée durant mon alternance chez EQUANS Digital, dans le cadre d’un projet hospitalier d’envergure.</p>
+
+    <div class="comp-grid">
+      <button class="comp-card reveal" data-case="concevoir">
+        <div class="comp-card-inner">
+          <span class="comp-index mono">01</span>
+          <h3>Concevoir</h3>
+          <p>Rédaction du manuel opérateur des IHM du projet hospitalier.</p>
+          <span class="comp-link">Ouvrir l'étude de cas
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </button>
+
+      <button class="comp-card reveal" data-case="verifier">
+        <div class="comp-card-inner">
+          <span class="comp-index mono">02</span>
+          <h3>Vérifier</h3>
+          <p>Validation fonctionnelle des installations avant mise en service.</p>
+          <span class="comp-link">Ouvrir l'étude de cas
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </button>
+
+      <button class="comp-card reveal" data-case="maintenir">
+        <div class="comp-card-inner">
+          <span class="comp-index mono">03</span>
+          <h3>Maintenir</h3>
+          <p>Prise en compte de la maintenance et de l'exploitation dès la conception.</p>
+          <span class="comp-link">Ouvrir l'étude de cas
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </button>
+
+      <button class="comp-card reveal" data-case="integrer">
+        <div class="comp-card-inner">
+          <span class="comp-index mono">04</span>
+          <h3>Intégrer</h3>
+          <p>Participation à la mise en service d'installations GTB.</p>
+          <span class="comp-link">Ouvrir l'étude de cas
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <p class="section-eyebrow reveal">04 — Contact</p>
+    <h2 class="section-title reveal">Échangeons</h2>
+    <p class="section-lead reveal">Disponible pour toute question du jury ou toute opportunité liée à mon projet professionnel.</p>
+
+    <div class="contact-grid reveal">
+      <a href="mailto:kristian.smaga@example.com" class="contact-card">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6l9 7 9-7M3 6h18v12H3V6z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        <span class="contact-label mono">Email</span>
+        <span class="contact-value">smagakristian@icloud.com</span>
+      </a>
+      <a href="tel:+33600000000" class="contact-card">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v4a2 2 0 01-2 2C9.7 21 3 14.3 3 6a2 2 0 011-2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        <span class="contact-label mono">Téléphone</span>
+        <span class="contact-value">+33 7 68 20 33 96</span>
+      </a>
+      <a href="https://www.linkedin.com/in/kristian-smaga-728ab62b3/" target="_blank" rel="noopener" class="contact-card">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 014 0V17M11 17v-7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        <span class="contact-label mono">LinkedIn</span>
+        <span class="contact-value">Kristian SMAGA</span>
+      </a>
+      <a href="assets/SMAGA_Kristian_CV.pdf.pdf" download class="contact-card">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 13h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="contact-label mono">Document</span>
+        <span class="contact-value">Télécharger le CV</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>Kristian Smaga — BUT GEII</span>
+    <span class="mono footer-status"><i class="status-dot"></i> Portfolio 2026</span>
+  </div>
+</footer>
+
+<!-- ================= CASE STUDY MODAL ================= -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Fermer">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal-content" id="modalContent"><!-- injected by JS --></div>
+  </div>
+</div>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">
+    <svg width="20" height="20" viewBox="0 0 18 18" fill="none"><path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Image précédente">
+    <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="lightbox-stage">
+    <div class="lightbox-image-placeholder">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M4 16l4-5 3 3 5-6 4 5M4 4h16v16H4z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/></svg>
+    </div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Image suivante">
+    <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
+<script src="cases.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
