@@ -197,7 +197,7 @@ window.CASE_STUDIES = {
 
     gallery: [
       {
-        src: "images/mise_en_service_4.jpeg",
+        src: "images/mise_en_service_4.JPEG",
         caption: "Mise en service — Diagnostic et recherche d’anomalies"
       }
     ],
@@ -270,7 +270,7 @@ window.CASE_STUDIES = {
 
     gallery: [
       {
-        src: "images/mise_en_service_5.jpeg",
+        src: "images/mise_en_service_5.JPEG",
         caption: "Mise en service — Chargement des programmes IHM des armoires"
       }
     ],
